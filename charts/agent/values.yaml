@@ -195,8 +195,8 @@ kuberhealthy:
       runInterval: 5m
       timeout: 10m
       image:
-        registry: docker.io
-        repository: kuberhealthy/pod-restarts-check
+        registry: ghcr.io
+        repository: kube-tarian/helmrepo-supporting-tools/pod-restarts-check
         tag: v2.5.0
       allNamespaces: true
       extraEnvs:
@@ -216,8 +216,8 @@ kuberhealthy:
       runInterval: 5m
       timeout: 15m
       image:
-        registry: docker.io
-        repository: kuberhealthy/pod-status-check
+        registry: ghcr.io
+        repository: kube-tarian/helmrepo-supporting-tools/pod-status-check
         tag: v1.3.0
       allNamespaces: true
       extraEnvs: {}
@@ -236,7 +236,7 @@ kuberhealthy:
       runInterval: 60m
       timeout: 1m
       image:
-        repository: kuberhealthy/test-check
+        repository: ghcr.io/kube-tarian/helmrepo-supporting-tools/test-check
         tag: v1.4.0
       extraEnvs:
         REPORT_FAILURE: "false"
@@ -250,7 +250,7 @@ kuberhealthy:
       runInterval: 1h
       timeout: 2m
       image:
-        repository: kuberhealthy/resource-quota-check
+        repository: ghcr.io/kube-tarian/helmrepo-supporting-tools/resource-quota-check
         tag: v1.3.0
       extraEnvs:
         BLACKLIST: "default"
